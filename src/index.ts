@@ -65,8 +65,8 @@ app.get('/health', (_req: Request, res: Response) => {
   });
 });
 
-// API routes
-app.use('/api', routes);
+// API routes (obfuscated endpoint)
+app.use('/x7k9', routes);
 
 // 404 handler
 app.use((_req: Request, res: Response) => {
