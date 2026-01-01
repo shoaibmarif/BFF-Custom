@@ -20,8 +20,8 @@ app.use(helmet({
 // CORS configuration - must be before routes
 app.use(
   cors({
-    origin: true, // Allow all origins in development
-    credentials: false, // Disable credentials to work with origin: true
+    origin: config.allowedOrigins,
+    credentials: false,
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization', 'X-Tenant-ID', 'X-Request-ID', 'X-Client-Time'],
     exposedHeaders: ['Content-Type'],

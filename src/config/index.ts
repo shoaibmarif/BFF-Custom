@@ -14,6 +14,9 @@ export const config = {
     'http://localhost:5003',
     'http://localhost:5004',
     'http://localhost:5005',
+    'https://custom.shoaibarif.site',
+    'https://user.shoaibarif.site',
+    'https://landing.shoaibarif.site',
   ],
   rateLimit: {
     windowMs: parseInt(process.env.RATE_LIMIT_WINDOW_MS || '900000', 10),
